@@ -12,10 +12,23 @@
 <body>
 
   <!-- NAVEGACION -->
-  <nav class="nav justify-content-end">
-    <a href="./index.html" class="nav-link">Inicio</a>
-    <a href="./acerca.html" class="nav-link">Nosotros</a>
-    <a href="./productos.html" class="nav-link">Trabajos</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <!-- MARCA LOGO -->
+    <a href="./index.html" class="nav-brand">
+      <img class="m-2" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="40" loading="lazy">MaiderArt
+    </a>
+    <!-- BOTON DEL MENU ACORDEON -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navegation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- CONTENEDOR PARA EL MENU DENTRO DEL ACORDEON -->
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarContent"> 
+        <a href="./index.html" class="btn btn-info nav-link m-2 p-2" role="button">Inicio</a>
+        <a href="./acerca.html" class="btn btn-info nav-link m-2 p-2" role="button">Nosotros</a>
+        <a href="./productos.html" class="btn btn-info nav-link active m-2 p-2" role="button">Trabajos</a>
+      </div>
+    </div>
   </nav>
 
   <!-- SECCION DEL JUMBOTRON -->
@@ -140,8 +153,8 @@
   <!-- Scripts -->
   <!-- <script src="./js/index.js"></script> -->
   <!-- SCRIPTS JQUERY Y POPPER.JS BOOTSTRAP -->
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
+.jumbotron {
+  background-color: #da6438 !important;
+  /* padding-top: 136px !important; */
+}
+
 main {
   background-color: #558367;
 }
-
-.jumbotron {
-  background-color: #da6438 !important;
-}
-
 
 .tarjeta {
   background-color: #ecd565;
