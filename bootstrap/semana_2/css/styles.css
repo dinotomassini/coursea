@@ -1,0 +1,30 @@
+main {
+  background-color: #558367;
+}
+
+.jumbotron {
+  background-color: #da6438 !important;
+}
+
+
+.tarjeta {
+  background-color: #ecd565;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid #836e06;
+  border-radius: 3%;
+}
+
+footer {
+  background-color: #56282e;
+}
+
+/** PALETA **/
+/************/
+/*
+ #ecd565 - amarillo - tarjetas
+ #da6438 - naranja - jumbotron
+ #c12d38 - rojo
+ #56282e - violeta
+ #558367 - verde - main
+*/
