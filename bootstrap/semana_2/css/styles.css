@@ -19,6 +19,12 @@ footer {
   background-color: #56282e;
 }
 
+.precio {
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: center;
+}
+
 /** PALETA **/
 /************/
 /*
