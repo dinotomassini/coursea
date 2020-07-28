@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./css/styles.css">
   <!-- ESTILOS BOOTSTRAP -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- OPEN ICONIC -->
+  <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <title>Semana 2</title>
 </head>
 <body>
@@ -19,14 +21,6 @@
       <img class="mr-2" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="40" loading="lazy">MaiderArt
     </a>
 
-    <!-- BREADCRUMB -->
-    <div aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
-      </ol>
-    </div>
-    
     <!-- BOTON DEL MENU ACORDEON -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navegation">
       <span class="navbar-toggler-icon"></span>
@@ -37,6 +31,7 @@
         <a href="./index.html" class="btn btn-info nav-link m-2 p-2" role="button">Inicio</a>
         <a href="./acerca.html" class="btn btn-info nav-link active m-2 p-2" role="button">Nosotros</a>
         <a href="./productos.html" class="btn btn-info nav-link m-2 p-2" role="button">Trabajos</a>
+        <a href="./contacto.html" class="btn btn-info nav-link m-2 p-2" role="button">Contacto</a>
       </div>
     </div>
   </nav>
@@ -51,6 +46,15 @@
 
   <!-- CONTENEDOR PRINCIPAL -->
   <main class="container-fluid p-2">
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+      </ol>
+    </nav>
+    
 
     <!-- SECCION HISTORIA -->
     <section id="historia" class="row p-3 m-2">
@@ -87,7 +91,7 @@
     <div class="row">
       <div class="col">
         <address class="text-right text-white">
-          La Esmeralda, Rocha, Uruguay
+          <p><span class="oi oi-home pr-2"></span>La Esmeralda, Rocha, Uruguay</p>
         </address>
       </div>
     </div>

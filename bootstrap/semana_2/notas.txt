@@ -1,1 +1,23 @@
-## Navegabilidad
+### SEMANA 2 ###
+
+## Navegacion
+  * Elemento <nav></nav>
+
+  * Criterios: incluir el logo del sitio, un click en el logo te devuelve a la pagina principal, los nombres de las secciones deben ser explicitos y en el lenguaje del vsitante, mostrar pocas secciones para no marear al visitante, preferir nombres cortos, indicar (tipografia o color contrastante) la seccion en la que se encuentra el usuario, si se incluye un login o un logout  tambien debe ir en la barra de navegacion.
+
+## Breadcrumbs
+  * Este componente permite ubicar al visitante en la estructura del sitio y navegar por ella.
+
+  * Se utiliza cuando hay una estructura jerarquica de mas de dos niveles
+
+  * Usos: 
+    - Basado en la jerarquia o ubicacion
+    - Basados en atributos: se pasa de lo mas abstracto a lo mas particular de un producto o tema. Ej: Libros > Computacion > Lenguajes de programacion > Javascript
+    - Basados en pasos de un proceso: se indican los pasos que realizo el usuario hasta llegar a donde esta. Ej: "Elige tu producto" > "Confirma tus datos de pago" > "Indica domicilio de entrega"
+
+## Iconos y fuentes
+  * Iconos: (Open Iconics)
+
+## Formularios
+  * 
+  
