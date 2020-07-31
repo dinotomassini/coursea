@@ -19,5 +19,55 @@
   * Iconos: (Open Iconics)
 
 ## Formularios
-  * 
+  - Las clases son desde .form-row > .form-group > .form-control --> un renglon o fila del formulario > grupo de formulario > control del formulario
+
+## Imagenes 
+  - .img-fluid - le indica que ajuste el tamaño de la imagen con respecto del contenedor(responsive)
+
+  - .card-img-top - agrega la imagen dentro de una card y arriba (solo top???)
+
+  - Consejos: 
+    - la imagen debe estar preparada con las dimensiones para donde la vamos a presentar
+    - intentar usar imagenes vectorizadas
+    - tener una imagen default (por si no hay imagenes en la base de datos de los articulos)
+
+## Notificaciones
+  * Badges
+    - brindan informacion de contexto o complementaria
+    - las clases se utilizan dentro del span:
+      - .badge - indica que es un badge
+      - .badge-(primary, etc.) - le da el estilo al badge
+      - .badge-pill - indica que es un badge tipo pildora, es mas redondeado que el comun.
+    - Ej: <span class="badge badge-primary">Esto es un badge</span>
+    - Tambien se pueden poner dentro de botones y emular como hacen otros sistemas para notificar de que hay articulos sin leer
+
+  * Alerts
+    - se utilizan para notificar inmediatamente el resultado de una accion.
+    - dentro de un div se le pueden agregar las clases .alert y .alert-(colores bootstrap)
+    - por lo general se utilizan debajo del header o barra de navegacion, se deben visualizar facilmente.
+    - Ejemplo de una alerta que se puede cerrar:
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Mensaje</strong> resto del mensaje
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+  * Barras de progreso
+    - indican el avanze de una operacion en tiempo real
+    - estan formadas por dos componentes:
+      - uno indica el contexto de la barra(contenedor)
+      - el otro den de este que ocupa el rol de la barra en si(barra)
+      - Ej: <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        - se puede agregar el atributo style="height: 1px;" para darle la altura a la barra de progreso
+        - a esta estructura se le va cambiando en aria-valuenow="25" y se le agrega el style="width: 25%" estos dos atributos deben coincidir y van cambiando a medida que el progreso de la accion que se esta realizando
+        - si antes del cierre del div de la barra le agregamos un texto, este aparece dentro de la barra de color blanco y centrado, se suele poner el porcentaje que va del avance de la accion, pero tambien se puede poner algun mensaje de porque fallo o que paso al finalizar
+
+## Tablas y tarjetas
+  * Clases para Tablas
+    - .table 
+    - .table-responsive
+
   

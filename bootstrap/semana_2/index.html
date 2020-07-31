@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- ESTILOS CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
   <!-- ESTILOS BOOTSTRAP -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- OPEN ICONIC -->
   <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <title>Semana 2</title>
@@ -38,8 +38,8 @@
   </nav>
 
   <!-- SECCION DEL JUMBOTRON -->
-  <div id="bienvenida" class="jumbotron jumbotron-fluid text-center mb-0">
-    <div class="p-3">
+  <div id="bienvenida" class="jumbotron jumbotron-fluid fondo text-center mb-0">
+    <div class="p-3 bg-light">
       <h1>MaiderArt</h1>
       <p>Bienvenidos</p>
     </div>
@@ -67,12 +67,79 @@
     <hr class="bg-light">
 
     <!-- SECCION TRABAJOS -->
-    <section id="trabajos" class="row p-3 m-2">
-      <div class="col">
-        <h2 class="text-white">Nuetros trabajos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ex libero, sodales sit amet aliquam in, varius ut velit. In porta augue vitae justo placerat faucibus. Phasellus sollicitudin elit ex, vitae dapibus ex pharetra ut. Suspendisse sit amet dignissim arcu. Cras id convallis nibh. Vivamus vel elit ut nisi condimentum tincidunt. Vestibulum tincidunt enim at tristique accumsan. Maecenas non mauris sit amet massa tincidunt auctor. Curabitur porttitor id odio eget mattis. Nunc facilisis finibus dui.</p>
-        <a class="btn btn-primary" href="./productos.html" role="button">Catalogo</a>
+    <section id="trabajos">
+      <!-- EXPLICACION DEL TRABAJO -->
+      <div class="row p-3 m-2">
+        <div class="col">
+          <h2 class="text-white">Nuetros trabajos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ex libero, sodales sit amet aliquam in, varius ut velit. In porta augue vitae justo placerat faucibus. Phasellus sollicitudin elit ex, vitae dapibus ex pharetra ut. Suspendisse sit amet dignissim arcu. Cras id convallis nibh. Vivamus vel elit ut nisi condimentum tincidunt. Vestibulum tincidunt enim at tristique accumsan. Maecenas non mauris sit amet massa tincidunt auctor. Curabitur porttitor id odio eget mattis. Nunc facilisis finibus dui.</p>
+          <a class="btn btn-primary" href="./productos.html" role="button">Catalogo</a>
+          
+        </div>
+      </div>  
+      
+      <hr class="bg-light">
+
+      <!-- ALGUNOS TRABAJOS -->
+      <div class="row p-3 m-2">
+        <div class="col">
+          <h3 class="text-center text-white mb-3">Algunos de nuestros trabajos</h3>
+          
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            
+            <div class="col mb-3">
+              <div class="card tarjeta" style="max-width: 18rem;">
+                <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
+                <img src="https://picsum.photos/150" height="200" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Titulo del producto</h5>
+                  <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
+                  <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col mb-3">
+              <div class="card tarjeta" style="max-width: 18rem;">
+                <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
+                <img src="https://picsum.photos/150"  height="200" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Titulo del producto</h5>
+                  <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
+                  <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col mb-3">
+              <div class="card tarjeta" style="max-width: 18rem;">
+                <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
+                <img src="https://picsum.photos/150"  height="200" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Titulo del producto</h5>
+                  <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
+                  <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
+                </div>
+              </div>  
+            </div>
+
+            <div class="col mb-3">
+              <div class="card tarjeta" style="max-width: 18rem;">
+                <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
+                <img src="https://picsum.photos/150"  height="200" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Titulo del producto</h5>
+                  <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
+                  <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
+                </div>
+              </div>  
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
     </section>
 
   </main><!-- FIN CONTENEDOR PRINCIPAL -->
