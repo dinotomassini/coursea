@@ -28,6 +28,13 @@ footer {
   align-self: center;
 }
 
+.tab-pane {
+  margin-top: 10px;
+}
+
+.list-group-item:hover {
+  background-color: #ecd565;
+}
 /** PALETA **/
 /************/
 /*

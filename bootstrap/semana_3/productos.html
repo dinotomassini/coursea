@@ -55,65 +55,177 @@
       </ol>
     </nav>
 
-    <!-- SECCION DE LA TABLA DE PRECIOS -->
-    <section id="precios_listado">
-        <div class="table-responsive">
-          <table class="table table-hover table-light table-striped">
-            <thead class="thead-dark">
-              <tr>
-                <th>Modelo</th>
-                <th>Pequeño</th>
-                <th>Mediano</th>
-                <th>Grande</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Perro</th>
-                <td>$ 1000</td>
-                <td>$ 1500</td>
-                <td>$ 2000</td>
-              </tr>
-              <tr>
-                <th>Dragon</th>
-                <td>$ 1000</td>
-                <td>$ 1500</td>
-                <td>$ 2000</td>
-              </tr>
-              <tr>
-                <th>Gato</th>
-                <td>$ 1000</td>
-                <td>$ 1500</td>
-                <td>$ 2000</td>
-              </tr>
-              <tr>
-                <th>Muñeca</th>
-                <td>$ 1000</td>
-                <td>$ 1500</td>
-                <td>$ 2000</td>
-              </tr>
-              <tr>
-                <th>Pulpo</th>
-                <td>$ 1000</td>
-                <td>$ 1500</td>
-                <td>$ 2000</td>
-              </tr>
-              <tr>
-                <th>Calificacion</th>
-                <td>
-                  <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
-                </td>
-                <td>
-                  <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
-                </td>
-                <td>
-                  <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+    <!-- ZONA DE PESTAÑAS -->
+    <!-- PESTAÑAS -->
+    <nav>
+      <div class="nav nav-pills nav-fill" id="solapas" role="tablist">
+        <a class="nav-item nav-link active" href="#precios" id="precios-tab" data-toggler="pills" role="tab" aria-controls="precios" aria-selected="true">Lista de Precios</a>
+        <a class="nav-item nav-link" href="#compras" id="compras-tab" data-toggler="pills" role="tab" aria-controls="compras" aria-selected="false">Opciones de Compra</a>
+        <a class="nav-item nav-link" href="#comentarios" id="comentarios-tab" data-toggler="pills" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+      </div>
+    </nav><!-- FIN PESTAÑAS --> 
+
+    <!-- CONTENIDO -->
+    <div class="tab-content" id="contenido-tabs" role="tabpanel">
+      <!-- 1. LISTA DE PRECIOS -->
+      <div class="tab-pane fade show active" id="precios" aria-labelledby="precios-tab">
+        <!-- SECCION DE LA TABLA DE PRECIOS -->
+        <!-- <section id="precios_listado"> -->
+          <div class="table-responsive">
+            <table class="table table-hover table-light table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Modelo</th>
+                  <th>Pequeño</th>
+                  <th>Mediano</th>
+                  <th>Grande</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Perro</th>
+                  <td>$ 1000</td>
+                  <td>$ 1500</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <th>Dragon</th>
+                  <td>$ 1000</td>
+                  <td>$ 1500</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <th>Gato</th>
+                  <td>$ 1000</td>
+                  <td>$ 1500</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <th>Muñeca</th>
+                  <td>$ 1000</td>
+                  <td>$ 1500</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <th>Pulpo</th>
+                  <td>$ 1000</td>
+                  <td>$ 1500</td>
+                  <td>$ 2000</td>
+                </tr>
+                <tr>
+                  <th>Calificacion</th>
+                  <td>
+                    <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                  </td>
+                  <td>
+                    <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                  </td>
+                  <td>
+                    <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <!-- </section> -->
+      </div>
+
+      <!-- 2. OPCIONES DE COMPRA -->
+      <div class="tab-pane fade" id="compras" aria-labelledby="compras-tab">
+        <div class="card text-center mx-auto" style="width: 18rem;">
+          <div class="card-header">
+            Tarjetas aceptadas
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">VISA</li>
+            <li class="list-group-item">OCA</li>
+            <li class="list-group-item">TARJETA D</li>
+            <li class="list-group-item">CREDISOL</li>
+            <li class="list-group-item">PREX</li>
+          </ul>
         </div>
-    </section>
+      </div>
+      
+      <!-- 3. COMENTARIOS -->
+      <div class="tab-pane fade" id="comentarios" aria-labelledby="comentarios-tab">
+        <div class="card-group mb-3">
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+          
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+
+          
+
+        <!--
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dino Tomassini</h5>
+            <p class="card-text">Todo excelente</p>
+          </div>
+        -->
+        </div>
+        <div class="card-group mb-3">
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+
+          <div class="card mr-3" style="width: 18rem;">
+            <div class="card-header">
+              <span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dino Tomassini</h5>
+              <p class="card-text">Todo excelente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- FIN CONTENIDO -->
 
     <!-- SECCION TRABAJOS -->
     <section id="trabajos" class="p-3 m-2">
@@ -473,5 +585,8 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    
+  </script>
 </body>
 </html>
