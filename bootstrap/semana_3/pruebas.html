@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- ESTILOS BOOTSTRAP -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- LIBRERIA OPEN-ICONIC -->
+  <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <title>Pagina de PRUEBAS</title>
+</head>
+<body>
+
+  <h1>SEMANA 4</h1>
+  
+  <main class="container-fluid">
+    <h2>TABS</h2>
+
+    <!-- PESTAÑAS -->
+    <nav>
+      <div class="nav nav-pills nav-fill justify-content-center" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="juan-tab" data-toggle="tab" href="#juan" role="tab" aria-controls="juan" aria-selected="true">JUAN</a>
+        <a class="nav-item nav-link" id="pedro-tab" data-toggle="tab" href="#pedro" role="tab" aria-controls="pedro" aria-selected="false">PEDRO</a>
+        <a class="nav-item nav-link" id="jose-tab" data-toggle="tab" href="#jose" role="tab" aria-controls="jose" aria-selected="false">JOSE</a>
+      </div>
+    </nav>
+
+    <!-- CONTENIDE DE LAS PESTAÑAS -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="juan" role="tabpanel" aria-labelledby="juan">
+        <p>Hola JUAN</p>
+      </div>
+      <div class="tab-pane" id="pedro" role="tabpanel" aria-labelledby="pedro">
+        <p>Hola PEDRO</p>
+      </div>
+      <div class="tab-pane" id="jose" role="tabpanel" aria-labelledby="jose">
+        <p>Hola JOSE</p>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- JS BOOTSTRAP -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    /*
+      document.querySelector('#juan-tab').addEventListener('click', (e) => {
+        e.preventDefault();
+        jQuery.tab
+      });
+      
+      document.querySelector('#pedro-tab').addEventListener('click', (e) => {
+        e.preventDefault();
+        jQuery.tab('show');
+      });
+          
+      document.querySelector('#jose-tab').addEventListener('click', (e) => {
+        e.preventDefault();
+        jQuery.tab
+      });
+    */
+   
+    /*
+      $('#nav-tab a').on('click', function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      }); 
+    */
+
+    
+      $('#nav-tab a').on('click', (e) => {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+    
+
+  </script>
+  
+</body>
+</html>
