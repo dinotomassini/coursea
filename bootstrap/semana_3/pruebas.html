@@ -14,27 +14,102 @@
   <h1>SEMANA 4</h1>
   
   <main class="container-fluid">
-    <h2>TABS</h2>
+    
+    <!-- ACCORDION -->
+    <div>
+      <div class="accordion" id="acordion">
+        <div class="card">
+          <div class="card-header bg-dark" id="titulo-historia">
+            <a class="text-danger" href="#historia" data-toggle="collapse" aria-expanded="false" aria-controls="historia">Historia</a>
+          </div>
+          <div class="collapse" id="historia" aria-labelledby="titulo-historia">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit.
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-header" id="titulo-ubicacion">
+            <h3><a class="btn btn-info" href="#ubicacion" data-toggle="collapse" aria-expanded="false" aria-controls="ubicacion">Ubicacion</a></h3>
+          </div>
+          <div class="collapse" id="ubicacion" aria-labelledby="titulo-ubicacion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit.
+            </div>
+          </div>
+        </div>
 
-    <!-- PESTAÑAS -->
-    <nav>
-      <div class="nav nav-pills nav-fill justify-content-center" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="juan-tab" data-toggle="tab" href="#juan" role="tab" aria-controls="juan" aria-selected="true">JUAN</a>
-        <a class="nav-item nav-link" id="pedro-tab" data-toggle="tab" href="#pedro" role="tab" aria-controls="pedro" aria-selected="false">PEDRO</a>
-        <a class="nav-item nav-link" id="jose-tab" data-toggle="tab" href="#jose" role="tab" aria-controls="jose" aria-selected="false">JOSE</a>
-      </div>
-    </nav>
+        <div class="card">
+          <div class="card-header" id="titulo-contacto">
+            <h3><button class="btn btn-info" type="button" data-toggle="collapse" data-target="#contacto" aria-expanded="false" aria-controls="contacto">Contacto</button></h3>
+          </div>
+          <div class="collapse" id="contacto" aria-labelledby="titulo-contacto">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit.
+            </div>
+          </div>
+        </div>
 
-    <!-- CONTENIDE DE LAS PESTAÑAS -->
-    <div class="tab-content">
-      <div class="tab-pane active" id="juan" role="tabpanel" aria-labelledby="juan">
-        <p>Hola JUAN</p>
       </div>
-      <div class="tab-pane" id="pedro" role="tabpanel" aria-labelledby="pedro">
-        <p>Hola PEDRO</p>
-      </div>
-      <div class="tab-pane" id="jose" role="tabpanel" aria-labelledby="jose">
-        <p>Hola JOSE</p>
+    </div>
+
+    <!-- COLLAPSE -->
+    <div>
+      <h2>COLLAPSE</h2>
+
+      <!-- BOTONES -->
+      <!-- <div>
+        <a class="btn btn-info" href="#historia" data-toggle="collapse">Historia</a>
+        <a class="btn btn-info" href="#ubicacion" data-toggle="collapse">Ubicacion</a>
+        <a class="btn btn-info" href="#contacto" data-toggle="collapse">Contacto</a>
+      </div> -->
+
+      <!-- CONTENIDO -->
+      <!-- <div>
+        <div class="collapse" id="historia">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit. 
+          </div>
+        </div>
+        <div class="collapse" id="ubicacion">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit. 
+          </div>
+        </div>
+        <div class="collapse" id="contacto">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a orci nisi. Integer dictum nulla ut justo hendrerit, at iaculis magna condimentum. Mauris ac neque eu est semper maximus. Donec interdum risus lorem, ac mattis risus aliquam eu. Donec id suscipit odio. Donec lacinia tortor sem. Nam vestibulum libero non est accumsan, ut aliquam tellus ultrices. Vestibulum sit amet nibh pretium dolor feugiat dignissim. Maecenas vel aliquet enim. Vivamus tortor justo, finibus non ipsum vel, dignissim aliquam orci. Etiam vitae sem nec ligula condimentum vulputate nec nec elit. 
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+
+    <!-- TABS -->
+    <div>
+      <h2>TABS</h2>
+  
+      <!-- PESTAÑAS -->
+      <nav>
+        <div class="nav nav-pills nav-fill justify-content-center" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="juan-tab" data-toggle="tab" href="#juan" role="tab" aria-controls="juan" aria-selected="true">JUAN</a>
+          <a class="nav-item nav-link" id="pedro-tab" data-toggle="tab" href="#pedro" role="tab" aria-controls="pedro" aria-selected="false">PEDRO</a>
+          <a class="nav-item nav-link" id="jose-tab" data-toggle="tab" href="#jose" role="tab" aria-controls="jose" aria-selected="false">JOSE</a>
+        </div>
+      </nav>
+  
+      <!-- CONTENIDE DE LAS PESTAÑAS -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="juan" role="tabpanel" aria-labelledby="juan">
+          <p>Hola JUAN</p>
+        </div>
+        <div class="tab-pane" id="pedro" role="tabpanel" aria-labelledby="pedro">
+          <p>Hola PEDRO</p>
+        </div>
+        <div class="tab-pane" id="jose" role="tabpanel" aria-labelledby="jose">
+          <p>Hola JOSE</p>
+        </div>
       </div>
     </div>
 
@@ -47,23 +122,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
-    /*
-      document.querySelector('#juan-tab').addEventListener('click', (e) => {
-        e.preventDefault();
-        jQuery.tab
-      });
-      
-      document.querySelector('#pedro-tab').addEventListener('click', (e) => {
-        e.preventDefault();
-        jQuery.tab('show');
-      });
-          
-      document.querySelector('#jose-tab').addEventListener('click', (e) => {
-        e.preventDefault();
-        jQuery.tab
-      });
-    */
-   
+       
     /*
       $('#nav-tab a').on('click', function (e) {
         e.preventDefault();

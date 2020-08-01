@@ -37,3 +37,27 @@
             * .show - mostrar el contenido
             * .active - para mostrar la pestaña seleccionada
           * `aria-labelledby="nombre-del-tab-al-que-hace-referencia"`
+    
+    * Tambien se debe de escribir codigo js
+
+### Collapse
+  * a los `<div>` que contendran la informacion se les debe dar un id y agregarle algunas clases (.collapse y/o .multi-collapse) 
+  * se debe crear vinculos o botones para engancharlos con los div, estos vinculos deben tener algunos atributos:
+    * `data-toggle="collapse"`
+    * `data-target="#`nombre_del_div_con_info`"` - solo si se utiliza `<button>`, si son elementos `<a>` con el href es suficiente 
+    * `aria-expanded="false"`
+    * `aria-controls="`nombre_del_collapse`"` - distingue entre los distintos componentes
+    * 
+
+### Accordion
+  * va todo dentro de un div con la clase accordion y con un id
+  * dentro de acordion por cada seccion que queremos crear agregamos un div .card 
+    * dentro de el un div .collapse 
+      * dentro de este un div 
+        * un div .card-header - tiene un id que se asocia con el div del body
+          * dentro de este se le agregan unos atribus al elemento `<a>` o `<button>`
+            * `href="#`id_del_div_collapse`"`
+            * `data-toggle="collapse"` - avisa que colapsa
+            * `aria-expanded="false"`
+            * `aria-controls="`id_del_div_collapse`"`
+        * y un div .card-body donde va la informacion que queremos mostrar

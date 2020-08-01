@@ -59,17 +59,17 @@
     <!-- ZONA DE PESTAÑAS -->
     <!-- PESTAÑAS -->
     <nav>
-      <div class="nav nav-pills nav-fill" id="solapas" role="tablist">
-        <a class="nav-item nav-link active" href="#precios" id="precios-tab" data-toggler="pills" role="tab" aria-controls="precios" aria-selected="true">Lista de Precios</a>
-        <a class="nav-item nav-link" href="#compras" id="compras-tab" data-toggler="pills" role="tab" aria-controls="compras" aria-selected="false">Opciones de Compra</a>
-        <a class="nav-item nav-link" href="#comentarios" id="comentarios-tab" data-toggler="pills" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+      <div class="nav nav-pills nav-fill justify-content-center" id="solapas" role="tablist">
+        <a class="nav-item nav-link active" href="#precios" id="precios-tab" data-toggle="pill" role="tab" aria-controls="precios" aria-selected="true">Lista de Precios</a>
+        <a class="nav-item nav-link" href="#compras" id="compras-tab" data-toggle="pill" role="tab" aria-controls="compras" aria-selected="false">Opciones de Compra</a>
+        <a class="nav-item nav-link" href="#comentarios" id="comentarios-tab" data-toggle="pill" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
       </div>
     </nav><!-- FIN PESTAÑAS --> 
 
     <!-- CONTENIDO -->
-    <div class="tab-content" id="contenido-tabs" role="tabpanel">
+    <div class="tab-content" id="contenido-tabs">
       <!-- 1. LISTA DE PRECIOS -->
-      <div class="tab-pane fade show active" id="precios" aria-labelledby="precios-tab">
+      <div class="tab-pane fade show active" id="precios" aria-labelledby="precios" role="tabpanel">
         <!-- SECCION DE LA TABLA DE PRECIOS -->
         <!-- <section id="precios_listado"> -->
           <div class="table-responsive">
@@ -132,23 +132,60 @@
       </div>
 
       <!-- 2. OPCIONES DE COMPRA -->
-      <div class="tab-pane fade" id="compras" aria-labelledby="compras-tab">
+      <div class="tab-pane fade" id="compras" aria-labelledby="compras" role="tabpanel">
         <div class="card text-center mx-auto" style="width: 18rem;">
           <div class="card-header">
             Tarjetas aceptadas
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">VISA</li>
-            <li class="list-group-item">OCA</li>
-            <li class="list-group-item">TARJETA D</li>
-            <li class="list-group-item">CREDISOL</li>
-            <li class="list-group-item">PREX</li>
-          </ul>
+          <!-- ACORDION -->
+          <div class="accordion" id="acordion">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <!-- VISA -->
+                <div class="card">
+                  <div class="card-header" id="titutlo-visa">
+                    <a class="d-block" href="#tarjeta-visa" data-toggle="collapse" aria-expanded="false" aria-controls="tarjeta-visa">VISA</a>
+                  </div>
+                  <div class="collapse" id="tarjeta-visa" aria-labelledby="titutlo-visa">
+                    <div class="card-body">
+                      Hasta en 12 cuotas sin recargo
+                    </div>
+                  </div>
+                </div>
+              </li>            
+              <li class="list-group-item">
+                <!-- OCA -->
+                <div class="card">
+                  <div class="card-header" id="titulo-oca">
+                    <a class="d-block" href="#tarjeta-oca" data-toggle="collapse" aria-expanded="false" aria-controls="tarjeta-oca">OCA</a>
+                  </div>
+                  <div class="collapse" id="tarjeta-oca" aria-labelledby="titulo-oca">
+                    <div class="card-body">
+                      Hasta en 12 cuotas sin recargo
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <!-- CREDISOL -->
+                <div class="card">
+                  <div class="card-header" id="titulo-credisol">
+                    <a class="d-block" href="#tarjeta-credisol" data-toggle="collapse" aria-expanded="false" aria-controls="tarjeta-credisol">CREDISOL</a>
+                  </div>
+                  <div class="collapse" id="tarjeta-credisol" aria-labelledby="titulo-credisol">
+                    <div class="card-body">
+                      No, imposible, esa tarjeta ya no existe
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       
       <!-- 3. COMENTARIOS -->
-      <div class="tab-pane fade" id="comentarios" aria-labelledby="comentarios-tab">
+      <div class="tab-pane fade" id="comentarios" aria-labelledby="comentarios" role="tabpanel">
         <div class="card-group mb-3">
           <div class="card mr-3" style="width: 18rem;">
             <div class="card-header">
@@ -542,51 +579,53 @@
     
   </main><!-- FIN CONTENEDOR PRINCIPAL -->
 
-<!-- SECCION DEL FOOTER -->
-<footer class="container-fluid p-2">
-      
-  <!-- AUTOR -->
-  <div class="row">
-    <div class="col">
-      <p>
-        <span class="font-weight-bold text-info">MaiderArt</span> por <span id="autor" class="text-muted text-monospace"> Dino Tomassini</span> - 2020
-      </p>
+  <!-- SECCION DEL FOOTER -->
+  <footer class="container-fluid p-2">
+        
+    <!-- AUTOR -->
+    <div class="row">
+      <div class="col">
+        <p>
+          <span class="font-weight-bold text-info">MaiderArt</span> por <span id="autor" class="text-muted text-monospace"> Dino Tomassini</span> - 2020
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- UBICACION -->
-  <div class="row">
-    <div class="col">
-      <address class="text-right text-white">
-        <p><span class="oi oi-home pr-2"></span>La Esmeralda, Rocha, Uruguay</p>
-      </address>
+    <!-- UBICACION -->
+    <div class="row">
+      <div class="col">
+        <address class="text-right text-white">
+          <p><span class="oi oi-home pr-2"></span>La Esmeralda, Rocha, Uruguay</p>
+        </address>
+      </div>
     </div>
-  </div>
 
-  <!-- ICONOS GIT -->
-  <div class="row mb-3 ml-auto mr-auto w-50 justify-content-center align-items-center text-center">
-    <div class="col-4">
-      <a href="https://gitlab.com/dinotomassini" class=""><img src="./img/file_type_gitlab_icon_130579.png" alt="Gitlab" class="img-fluid" height="40px"></a>
+    <!-- ICONOS GIT -->
+    <div class="row mb-3 ml-auto mr-auto w-50 justify-content-center align-items-center text-center">
+      <div class="col-4">
+        <a href="https://gitlab.com/dinotomassini" class=""><img src="./img/file_type_gitlab_icon_130579.png" alt="Gitlab" class="img-fluid" height="40px"></a>
+      </div>
+      <div class="col-4">
+        <a href="https://github.com/dinotomassini" class=""><img src="./img/logotipo-de-github.png" alt="Github" height="40px"></a>
+      </div>
     </div>
-    <div class="col-4">
-      <a href="https://github.com/dinotomassini" class=""><img src="./img/logotipo-de-github.png" alt="Github" height="40px"></a>
+    
+    <!-- ATRIBUCIONES -->
+    <div class="row">
+      <div class="col text-center">Icono de gitlab diseñado por <a href="https://www.flaticon.es/autores/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
     </div>
-  </div>
-  
-  <!-- ATRIBUCIONES -->
-  <div class="row">
-    <div class="col text-center">Icono de gitlab diseñado por <a href="https://www.flaticon.es/autores/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Scripts -->
-  <!-- <script src="./js/index.js"></script> -->
   <!-- SCRIPTS JQUERY Y POPPER.JS BOOTSTRAP -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
-    
+    $('#solapas a').on('click', (e) => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
   </script>
 </body>
 </html>
