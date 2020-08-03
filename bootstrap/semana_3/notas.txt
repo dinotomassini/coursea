@@ -7,7 +7,7 @@
 ## JS
 (`role="tablist"`, `role="tab"`, `role="tabpanel"`, and additional `aria-` attributes)
 
-### tabs
+### Tabs
   * Estas pestañas se dividen entre los enlaces(`<ul>`, `<nav>`, `<a>`) que son las propias pestañas y su contenido o content (`<div><div>Contenido</div></div>`)
   
     * #### Pestañas
@@ -61,3 +61,43 @@
             * `aria-expanded="false"`
             * `aria-controls="`id_del_div_collapse`"`
         * y un div .card-body donde va la informacion que queremos mostrar
+
+### Modal
+  * por lo general se define al final, pero antes del cierre del body
+  * la estructura para el modal minimo es:
+  `
+  <button type="button" data-toggle="modal" data-target="#modalWin">
+   Abrir Modal
+  </button>
+
+  <div class="modal" id="modalWin" role="dialog" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="modalTitle">Titulo</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+      </button>
+     </div>
+     <div class="modal-body">
+      Body
+     </div>
+     <div class="modal-footer">
+      Footer
+     </div>
+    </div>
+   </div>
+  </div>
+  `
+
+### Tooltips
+  * pueden aparecer al pasar el raton por el elemento que queramos para esto hay que agregarle algunos atributos data
+    * `data-toggle="tooltip"` - le decimos que un tooltip
+    * `data-placement="`top, right, bottom, left`"` - con este atributo le decimos hacia que direccion se muestra
+    * `title="`mensaje a mostrar`"` - este es el mensaje que se muestra en el tooltip
+  * los tooltip se deben activar desde js:
+    `$(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });`
+
+### Popovers

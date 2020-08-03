@@ -10,14 +10,65 @@
   <title>Pagina de PRUEBAS</title>
 </head>
 <body>
-
-  <h1>SEMANA 4</h1>
-  
+  <h1 class="text-center bg-dark text-light p-3">SEMANA 4</h1>
+  <hr>
   <main class="container-fluid">
     
-    <!-- ACCORDION -->
+    <!-- MODALS -->
     <div>
-      <div class="accordion" id="acordion">
+      <h2>MODAL</h2>
+      <!-- 
+      <button class="btn btn-warning mb-3" type="button" data-toggle="modal" data-target="#modalWin">Abrir modal</button>
+      <div class="modal fade" tabindex="-1" id="modalWin" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Modal de prueba</h5>
+              <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              Este es un mensaje que va en el body del modal que estas leyendo ahora mismo.
+            </div>
+            <div class="modal-footer text-muted">
+              Este es el footer del modal
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <hr>
+
+    <!-- TOOLTIPS -->
+    <div>
+      <h2>TOOLTIPS</h2>
+       
+      <a href="#" data-toggle="tooltip" data-placement="top" title="Esto es un tooltip">Tooltip</a>
+      <div class="tooltip bs-tooltip-top" role="tooltip">
+        <div class="arrow"></div>
+        <div class="tooltip-inner">
+          Esto es un tooltip
+        </div>
+      </div>
+      
+    </div>
+
+    <hr>
+
+    <!-- POPOVERS -->
+    <div>
+      <h2>POPOVERS</h2>
+
+      <a tabindex="0" class="btn btn-outline-dark" role="button" data-toggle="popover" data-trigger="focus" title="El titulo del popover" data-content="Este es el cuerpo del popover donde se muestra el texto">Popover</a>
+    </div>
+
+    <hr>
+
+    <!-- ACCORDION listo -->
+    <div>
+      <h2>ACCORDION</h2>
+      <!-- <div class="accordion" id="acordion">
         <div class="card">
           <div class="card-header bg-dark" id="titulo-historia">
             <a class="text-danger" href="#historia" data-toggle="collapse" aria-expanded="false" aria-controls="historia">Historia</a>
@@ -51,10 +102,12 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
     </div>
 
-    <!-- COLLAPSE -->
+    <hr>
+
+    <!-- COLLAPSE listo -->
     <div>
       <h2>COLLAPSE</h2>
 
@@ -86,21 +139,23 @@
 
     </div>
 
-    <!-- TABS -->
+    <hr>
+
+    <!-- TABS listo --> 
     <div>
       <h2>TABS</h2>
   
       <!-- PESTAÑAS -->
-      <nav>
+      <!-- <nav>
         <div class="nav nav-pills nav-fill justify-content-center" id="nav-tab" role="tablist">
           <a class="nav-item nav-link active" id="juan-tab" data-toggle="tab" href="#juan" role="tab" aria-controls="juan" aria-selected="true">JUAN</a>
           <a class="nav-item nav-link" id="pedro-tab" data-toggle="tab" href="#pedro" role="tab" aria-controls="pedro" aria-selected="false">PEDRO</a>
           <a class="nav-item nav-link" id="jose-tab" data-toggle="tab" href="#jose" role="tab" aria-controls="jose" aria-selected="false">JOSE</a>
         </div>
-      </nav>
+      </nav> -->
   
       <!-- CONTENIDE DE LAS PESTAÑAS -->
-      <div class="tab-content">
+      <!-- <div class="tab-content">
         <div class="tab-pane active" id="juan" role="tabpanel" aria-labelledby="juan">
           <p>Hola JUAN</p>
         </div>
@@ -110,7 +165,7 @@
         <div class="tab-pane" id="jose" role="tabpanel" aria-labelledby="jose">
           <p>Hola JOSE</p>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </main>
@@ -122,21 +177,33 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
-       
-    /*
-      $('#nav-tab a').on('click', function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-      }); 
-    */
 
+    $(document).ready( (e) => {
+      //  SCRIPT TOOLTIP
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    });
+    // $(function () {
+    //   $('[data-toggle="tooltip"]').tooltip();
+    // });    
     
-      $('#nav-tab a').on('click', (e) => {
-        e.preventDefault();
-        $(this).tab('show');
-      });
+    // SCRIPT POPOVER
+    // $(document).ready( (e) => {
+    //   $('[data-toggle="popover"]').popover();
+    // });
+    // $(function () {
+    //   $('[data-toggle="popover"]').popover();
+    // });
+    $('.popover-dismiss').popover({
+      trigger: 'focus'
+    });
     
-
+    // SCRIPT PESTAÑAS
+    $('#nav-tab a').on('click', (e) => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+      
   </script>
   
 </body>
