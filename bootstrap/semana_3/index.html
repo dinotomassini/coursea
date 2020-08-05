@@ -104,52 +104,16 @@
                   <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
                   <img src="https://picsum.photos/150" height="200" class="card-img-top">
                   <div class="card-body">
-                    <h5 class="card-title">Titulo del producto</h5>
+                    <h5 class="card-title">
+                      <a role="button" tabindex="0" data-container="body" data-toggle="popover" data-placement="right"  data-content="Este producto es realizado artesanalmente" title="Artesanal">Titulo del producto</a>
+                    </h5>
                     <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
                     <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
                   </div>
                 </div>  
               </div>
               
-              <!-- TARJETA -->
-              <div class="col mb-3">
-                <div class="card tarjeta" style="max-width: 18rem;">
-                  <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
-                  <img src="https://picsum.photos/150"  height="200" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Titulo del producto</h5>
-                    <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
-                    <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
-                  </div>
-                </div>  
-              </div>
-  
-              <!-- TARJETA -->
-              <div class="col mb-3">
-                <div class="card tarjeta" style="max-width: 18rem;">
-                  <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
-                  <img src="https://picsum.photos/150"  height="200" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Titulo del producto</h5>
-                    <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
-                    <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
-                  </div>
-                </div>  
-              </div>
-  
-              <!-- TARJETA -->
-              <div class="col mb-3">
-                <div class="card tarjeta" style="max-width: 18rem;">
-                  <h6 class="card-header"><img class="mr-1" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="25" loading="lazy">MaiderArt</h6>
-                  <img src="https://picsum.photos/150"  height="200" class="card-img-top">
-                  <div class="card-body">
-                    <h5 class="card-title">Titulo del producto</h5>
-                    <p class="card-text">Alguna descripcion sobre el trabajo que se presenta en la imagen.</p>
-                    <button class="btn btn-primary btn-block align-self-center">$ 1500<span class="oi oi-cart pl-2"></span></button>
-                  </div>
-                </div>  
-              </div>
-  
+
             </div>
           </div>
         </div>
@@ -231,7 +195,14 @@
 
   <!-- JS BOOTSTRAP -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready( (e) => {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
 </body>
 </html>

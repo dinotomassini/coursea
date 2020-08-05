@@ -60,7 +60,10 @@
     <div>
       <h2>POPOVERS</h2>
 
-      <a tabindex="0" class="btn btn-outline-dark" role="button" data-toggle="popover" data-trigger="focus" title="El titulo del popover" data-content="Este es el cuerpo del popover donde se muestra el texto">Popover</a>
+      <button class="btn btn-outline-warning mr-3" type="button" data-toggle="popover" title="El titulo del popover" data-container="body" data-placement="right" data-content="Este es el cuerpo del popover donde se muestra el texto">Popover</button>
+
+
+      <a tabindex="0" class="btn btn-outline-dark" role="button" data-toggle="popover" data-trigger="focus" title="El titulo del popover" data-container="body" data-placement="top" data-content="Este es el cuerpo del popover donde se muestra el texto">Popover</a>
     </div>
 
     <hr>
@@ -173,7 +176,8 @@
 
   <!-- JS BOOTSTRAP -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
@@ -181,22 +185,23 @@
     $(document).ready( (e) => {
       //  SCRIPT TOOLTIP
       $('[data-toggle="tooltip"]').tooltip();
+      // SCRIPT POPOVER
       $('[data-toggle="popover"]').popover();
     });
+
     // $(function () {
     //   $('[data-toggle="tooltip"]').tooltip();
     // });    
-    
-    // SCRIPT POPOVER
+       
     // $(document).ready( (e) => {
     //   $('[data-toggle="popover"]').popover();
     // });
+    
     // $(function () {
     //   $('[data-toggle="popover"]').popover();
     // });
-    $('.popover-dismiss').popover({
-      trigger: 'focus'
-    });
+    
+    
     
     // SCRIPT PESTAÑAS
     $('#nav-tab a').on('click', (e) => {

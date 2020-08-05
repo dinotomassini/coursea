@@ -101,3 +101,14 @@
     });`
 
 ### Popovers
+  * los tooltip se deben activar desde js:
+    `$(function () {
+      $('[data-toggle="popover"]').popover();
+    });`
+  * la ruta del script de popover.js funciono con, `./node_modules/popper.js/dist/umd/popper.min.js`
+  * hay que agregarle algunos atributos data
+    * `data-toggle="popover"` - le avisa que es un popover
+    * `data-trigger="focus"` - evita que se cierre dando click de vuelta en el boton, pero sale dando click en el popover o fuera de el
+    * `title="titulo"` - titulo del popover
+    * `data-placement="right"` - por donde aparece
+    * `data-content="texto"` - el texto que queremos mostrar
