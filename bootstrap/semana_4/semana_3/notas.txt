@@ -1,0 +1,125 @@
+# SEMANA 3
+  * en el index el orden de los scripts de js son:
+    1. jquery
+    2. popper.js
+    3. bootstrap
+
+## JS
+(`role="tablist"`, `role="tab"`, `role="tabpanel"`, and additional `aria-` attributes)
+
+### Tabs
+  * Estas pestañas se dividen entre los enlaces(`<ul>`, `<nav>`, `<a>`) que son las propias pestañas y su contenido o content (`<div><div>Contenido</div></div>`)
+  
+    * #### Pestañas
+      * se puede crear una lista o un nav con clases especificas como: 
+        * ademas de agregarle del rol (`role="tablist"`) y un `id="`nombre del enlace`-tab"`
+        * .nav - puede ser `<ul>`, `<ol>`, `<nav>`
+        * .nav-pills - tipo botones
+        * .nav-tabs - agrega un borde para el efecto pestaña
+        * .nav-item - puede ser un `<li>` o un `<a>`
+        * .nav-link - es para `<a>`, tambien puede contener la clase anterior
+        * .active - para señalar la pestaña seleccionada
+      * se debe agregar el elemento `<a>` con id, `href="#`id_del_div_con_contenido`"`, y el `role="tab"` 
+      * si se usa nav: se debe rodear con un <div> todo su interior para agregarle todas las clases y los roles al `<div>`
+      * `data-toggle`
+      * `aria-controls="`id_del_div_con_contenido`"`
+      * `aria-selected`
+
+    * #### Contenido (paneles)
+      * este se crea dentro de un `<div>` general con la clase .tab-content y con un id
+        * dentro de este div general se crea un `<div>` por cada contenido de pestaña
+        * a estos divs se les debe de poner 
+          * id - para que cargue segun el href de la pestaña, relacionado con aria-controls 
+          * `role="tabpanel"`
+          * clases: 
+            * .tab-pane, 
+            * .fade - para el efecto de transicion
+            * .show - mostrar el contenido
+            * .active - para mostrar la pestaña seleccionada
+          * `aria-labelledby="nombre-del-tab-al-que-hace-referencia"`
+    
+    * Tambien se debe de escribir codigo js
+
+### Collapse
+  * a los `<div>` que contendran la informacion se les debe dar un id y agregarle algunas clases (.collapse y/o .multi-collapse) 
+  * se debe crear vinculos o botones para engancharlos con los div, estos vinculos deben tener algunos atributos:
+    * `data-toggle="collapse"`
+    * `data-target="#`nombre_del_div_con_info`"` - solo si se utiliza `<button>`, si son elementos `<a>` con el href es suficiente 
+    * `aria-expanded="false"`
+    * `aria-controls="`nombre_del_collapse`"` - distingue entre los distintos componentes
+    * 
+
+### Accordion
+  * va todo dentro de un div con la clase accordion y con un id
+  * dentro de acordion por cada seccion que queremos crear agregamos un div .card 
+    * dentro de el un div .collapse 
+      * dentro de este un div 
+        * un div .card-header - tiene un id que se asocia con el div del body
+          * dentro de este se le agregan unos atribus al elemento `<a>` o `<button>`
+            * `href="#`id_del_div_collapse`"`
+            * `data-toggle="collapse"` - avisa que colapsa
+            * `aria-expanded="false"`
+            * `aria-controls="`id_del_div_collapse`"`
+        * y un div .card-body donde va la informacion que queremos mostrar
+
+### Modal
+  * por lo general se define al final, pero antes del cierre del body
+  * la estructura para el modal minimo es:
+  `
+  <button type="button" data-toggle="modal" data-target="#modalWin">
+   Abrir Modal
+  </button>
+
+  <div class="modal" id="modalWin" role="dialog" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="modalTitle">Titulo</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+      </button>
+     </div>
+     <div class="modal-body">
+      Body
+     </div>
+     <div class="modal-footer">
+      Footer
+     </div>
+    </div>
+   </div>
+  </div>
+  `
+
+### Tooltips
+  * pueden aparecer al pasar el raton por el elemento que queramos para esto hay que agregarle algunos atributos data
+    * `data-toggle="tooltip"` - le decimos que un tooltip
+    * `data-placement="`top, right, bottom, left`"` - con este atributo le decimos hacia que direccion se muestra
+    * `title="`mensaje a mostrar`"` - este es el mensaje que se muestra en el tooltip
+  * los tooltip se deben activar desde js:
+    `$(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });`
+
+### Popovers
+  * los tooltip se deben activar desde js:
+    `$(function () {
+      $('[data-toggle="popover"]').popover();
+    });`
+  * la ruta del script de popover.js funciono con, `./node_modules/popper.js/dist/umd/popper.min.js`
+  * hay que agregarle algunos atributos data
+    * `data-toggle="popover"` - le avisa que es un popover
+    * `data-trigger="focus"` - evita que se cierre dando click de vuelta en el boton, pero sale dando click en el popover o fuera de el
+    * `title="titulo"` - titulo del popover
+    * `data-placement="right"` - por donde aparece
+    * `data-content="texto"` - el texto que queremos mostrar
+
+### Carousel
+  * la composicion para lograr el carrusel basico es
+    * un `<div>` con las clases .carousel y .slide, para avisar que sera un carrusel, tambien se le debe agregar el atributo `data-ride="carousel"` y un id por si llegaramos a tener varios carousel y para cuando le queremos agregar algunos controles
+    * dentro del carrusel se crea otro div con la clase .carousel-inner que es el que lo delimita
+    * dentro del marco, se crea un div por cada elemento que queramos mostrar en el carrusel, este div debe tener algunas clases como .carousel-item y el primer elemento que queramos mostrar tambien debe tener la clase .active
+    * si estos elementos items son imagenes se les puede agregar las clases .w-100 .d-block para que el navegador no las autodimensione
+  * tambien se les puede agregar indicadores y flechas para navegar entre las imagenes
+
+<!-- !!!!!!!!!! ATENCION SOLO PRUEBA !!!!!!!!!! -->
+        <a class="btn btn-danger" href="./pruebas.html">PRUEBAS</a>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- ESTILOS BOOTSTRAP -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- OPEN ICONIC -->
+  <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <title>Semana 3</title>
+</head>
+<body>
+
+  <!-- NAVEGACION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    
+    <!-- MARCA LOGO -->
+    <a href="./index.html" class="nav-brand">
+      <img class="mr-2" src="./img/kisspng-bitbucket-computer-software-github-clip-art-git-browser-5b7f36b44c71f6.1319808515350637323131.png" alt="logo" width="40" loading="lazy">MaiderArt
+    </a>
+
+    <!-- BOTON DEL MENU ACORDEON -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navegation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- CONTENEDOR PARA EL MENU DENTRO DEL ACORDEON -->
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarContent"> 
+        <a href="./index.html" class="btn btn-info nav-link m-2 p-2" role="button">Inicio</a>
+        <a href="./acerca.html" class="btn btn-info nav-link m-2 p-2" role="button">Nosotros</a>
+        <a href="./productos.html" class="btn btn-info nav-link m-2 p-2" role="button">Trabajos</a>
+        <a href="./contacto.html" class="btn btn-info nav-link active m-2 p-2" role="button">Contacto</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- SECCION DEL JUMBOTRON -->
+  <div id="bienvenida" class="jumbotron jumbotron-fluid fondo text-center mb-0">
+    <div class="p-3 bg-light">
+      <h1>MaiderArt</h1>
+      <p>Bienvenidos</p>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="container-fluid p-2">
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+      </ol>
+    </nav>
+
+    <!-- SECCION FORMULARIO -->
+    <section class="row p-3 m-2">
+      <div class="col">
+        <h2 class="text-white">Deja tu comentario</h2>
+        <hr>
+        <form>
+    
+          <!-- NOMBRE Y APELLIDO -->
+          <div class="form-row">
+            <div class="form-group col-sm-6">
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group col-sm-6">
+              <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+    
+          <!-- CORREO -->
+          <div class="form-group">
+            <input type="email" name="mail" id="mail" class="form-control" placeholder="E-mail">
+          </div>
+    
+          <!-- DIRECCION Y CIUDAD -->
+          <div class="form-row">
+            <div class="form-group col-sm-9">
+              <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Direccion">
+            </div>
+            <div class="form-group col-sm-3">
+              <select name="ciudad" id="ciudad" class="form-control">
+                <option selected value="montevideo">Montevideo</option>
+                <option value="canelones">Canelones</option>
+                <option value="maldonado">Maldonado</option>
+                <option value="rocha">Rocha</option>
+              </select>
+            </div>
+          </div>
+    
+          <!-- COMENTARIO -->
+          <div class="form-group">
+            <textarea name="comentario" id="comentario" rows="10" class="form-control" placeholder="Deja tu comentario"></textarea>
+          </div>
+    
+          <!-- PEDIR MAS INFO -->
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" name="contactar" id="contactar" class="form-check-input">
+              <label for="contactar" class="form-check-label">
+                Quiero que me envien mas informacion
+              </label>
+            </div>
+          </div>
+    
+          <!-- SUBMIT -->
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+    
+  </main><!-- FIN CONTENEDOR PRINCIPAL -->
+
+<!-- SECCION DEL FOOTER -->
+<footer class="container-fluid p-2">
+      
+  <!-- AUTOR -->
+  <div class="row">
+    <div class="col">
+      <p>
+        <span class="font-weight-bold text-info">MaiderArt</span> por <span id="autor" class="text-muted text-monospace"> Dino Tomassini</span> - 2020
+      </p>
+    </div>
+  </div>
+
+  <!-- UBICACION -->
+  <div class="row">
+    <div class="col">
+      <address class="text-right text-white">
+        <p><span class="oi oi-home pr-2"></span>La Esmeralda, Rocha, Uruguay</p>
+      </address>
+    </div>
+  </div>
+
+  <!-- ICONOS GIT -->
+  <div class="row mb-3 ml-auto mr-auto w-50 justify-content-center align-items-center text-center">
+    <div class="col-4">
+      <a href="https://gitlab.com/dinotomassini" class=""><img src="./img/file_type_gitlab_icon_130579.png" alt="Gitlab" class="img-fluid" height="40px"></a>
+    </div>
+    <div class="col-4">
+      <a href="https://github.com/dinotomassini" class=""><img src="./img/logotipo-de-github.png" alt="Github" height="40px"></a>
+    </div>
+  </div>
+  
+  <!-- ATRIBUCIONES -->
+  <div class="row">
+    <div class="col text-center">Icono de gitlab diseñado por <a href="https://www.flaticon.es/autores/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <!-- <script src="./js/index.js"></script> -->
+  <!-- SCRIPTS JQUERY Y POPPER.JS BOOTSTRAP -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
