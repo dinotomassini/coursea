@@ -56,56 +56,74 @@
     </nav>
     
 
-    <!-- SECCION HISTORIA -->
-    <section id="historia" class="row p-3 m-2">
-      <div class="col">
-        <h2 class="text-white">Sobre nosotros</h2>
-        <hr>
-        <div class="justify-content-center">
-          <img src="https://picsum.photos/450/300" class="img-fluid" alt="">
+    <!-- SECCION HISTORIA class="row p-3 m-2"-->
+    <section id="historia">
+      
+      <div class="row p-3 m-2">
+        <div class="col">
+          <h2 class="text-white">Sobre nosotros</h2>
+          <hr>
+          <img src="https://picsum.photos/400/200" class="w-100 mx-auto rounded-lg" alt="">
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis pharetra, blandit nisi sed, placerat felis. Donec porta tortor elit, eget eleifend odio convallis eget.
+          </p>  
+          <hr>
         </div>
-        <hr>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis pharetra, blandit nisi sed, placerat felis. Donec porta tortor elit, eget eleifend odio convallis eget.
-        </p>  
-        <hr>
+      </div>
 
-        <!-- COLLAPSE -->
-        <a href="#historia_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="historia_collapse">Nuestra historia</a>
-        <a href="#ubicacion_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="ubicacion_collapse">Nuestra ubicacion</a>
-        <a href="#materiales_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="materiales_collapse">Nuestros materiales</a>
-        <div class="row">
-          <div class="">
-            <!-- HISTORIA -->
-            <div class="collapse multi-collapse" id="historia_collapse">
-              <div class="card card-body">
-                <h5>La Historia</h5>
-                Nunc aliquam risus a lectus finibus ultricies ac ut quam. Sed at aliquam nibh. Nullam non congue sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lobortis iaculis leo in hendrerit. Integer et dapibus massa.
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <!-- UBICACION -->
-            <div class="collapse multi-collapse" id="ubicacion_collapse">
-              <div class="card card-body">
-                <h5>La Ubicacion</h5>
-                Nunc aliquam risus a lectus finibus ultricies ac ut quam. Sed at aliquam nibh. Nullam non congue sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lobortis iaculis leo in hendrerit. Integer et dapibus massa.
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <!-- MATERIALES -->
-            <div class="collapse multi-collapse" id="materiales_collapse">
-              <div class="card card-body">
-                <h5>Los Materiales</h5>
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
-              </div>
+      <!-- COLLAPSE BUTTONS -->
+      <div class="row p-3 m-2 justify-content-center">
+        <div class="col">
+          <a href="#historia_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="historia_collapse">Nuestra historia</a>
+        </div>
+        <div class="col">
+          <a href="#ubicacion_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="ubicacion_collapse">Nuestra ubicacion</a>
+        </div>
+        <div class="col">  
+          <a href="#materiales_collapse" class="btn btn-outline-light" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="materiales_collapse">Nuestros materiales</a>
+        </div>
+        <div class="col">
+          <button id="collapse_button_close"  class="btn btn-outline-dark" data-toggle="collapse" type="button" aria-expanded="false">Cerrar informacion</button>
+        </div>
+      </div>
+
+      <!-- COLLAPSE CONTENT -->
+      <div class="row m-2">
+        <!-- HISTORIA -->
+        <div class="row-cols-1 mb-2">
+          <div class="collapse multi-collapse" id="historia_collapse">
+            <div class="card card-body">
+              <h5>La Historia</h5>
+              Nunc aliquam risus a lectus finibus ultricies ac ut quam. Sed at aliquam nibh. Nullam non congue sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lobortis iaculis leo in hendrerit. Integer et dapibus massa.
             </div>
           </div>
         </div>
+        <!-- UBICACION -->
+        <div class="row-cols-1 mb-2">
+          <div class="collapse multi-collapse" id="ubicacion_collapse">
+            <div class="card card-body">
+              <h5>La Ubicacion</h5>
+              Nunc aliquam risus a lectus finibus ultricies ac ut quam. Sed at aliquam nibh. Nullam non congue sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lobortis iaculis leo in hendrerit. Integer et dapibus massa.
+            </div>
+          </div>
+        </div>
+        <!-- MATERIALES -->
+        <div class="row-cols-1 mb-2">
+          <div class="collapse multi-collapse" id="materiales_collapse">
+            <div class="card card-body">
+              <h5>Los Materiales</h5>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+            </div>
+          </div>
+        </div>
+      </div>     
 
-        <hr>
-        <a href="./productos.html" class="btn btn-block btn-outline-warning">Vea nuestro trabajo</a>
+      <div class="row p-3 m-2">
+        <div class="col">
+          <hr>
+          <a href="./productos.html" class="btn btn-block btn-outline-warning">Vea nuestro trabajo</a>
+        </div>
       </div>
     </section>
     
@@ -154,5 +172,13 @@
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $('#collapse_button_close').on('click', (e) => {
+        e.preventDefault();
+        $('#historia_collapse').collapse('hide');
+        $('#ubicacion_collapse').collapse('hide');
+        $('#materiales_collapse').collapse('hide');
+    });
+  </script>
 </body>
 </html>

@@ -121,5 +121,5 @@
     * si estos elementos items son imagenes se les puede agregar las clases .w-100 .d-block para que el navegador no las autodimensione
   * tambien se les puede agregar indicadores y flechas para navegar entre las imagenes
 
-faltan:
- * poner los popover en los titulos de las cartas de prodcutos e index
+<!-- !!!!!!!!!! ATENCION SOLO PRUEBA !!!!!!!!!! -->
+        <a class="btn btn-danger" href="./pruebas.html">PRUEBAS</a>
