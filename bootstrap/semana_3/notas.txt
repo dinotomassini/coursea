@@ -120,3 +120,6 @@
     * dentro del marco, se crea un div por cada elemento que queramos mostrar en el carrusel, este div debe tener algunas clases como .carousel-item y el primer elemento que queramos mostrar tambien debe tener la clase .active
     * si estos elementos items son imagenes se les puede agregar las clases .w-100 .d-block para que el navegador no las autodimensione
   * tambien se les puede agregar indicadores y flechas para navegar entre las imagenes
+
+faltan:
+ * poner los popover en los titulos de las cartas de prodcutos e index
