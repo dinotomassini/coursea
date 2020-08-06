@@ -112,3 +112,11 @@
     * `title="titulo"` - titulo del popover
     * `data-placement="right"` - por donde aparece
     * `data-content="texto"` - el texto que queremos mostrar
+
+### Carousel
+  * la composicion para lograr el carrusel basico es
+    * un `<div>` con las clases .carousel y .slide, para avisar que sera un carrusel, tambien se le debe agregar el atributo `data-ride="carousel"` y un id por si llegaramos a tener varios carousel y para cuando le queremos agregar algunos controles
+    * dentro del carrusel se crea otro div con la clase .carousel-inner que es el que lo delimita
+    * dentro del marco, se crea un div por cada elemento que queramos mostrar en el carrusel, este div debe tener algunas clases como .carousel-item y el primer elemento que queramos mostrar tambien debe tener la clase .active
+    * si estos elementos items son imagenes se les puede agregar las clases .w-100 .d-block para que el navegador no las autodimensione
+  * tambien se les puede agregar indicadores y flechas para navegar entre las imagenes
