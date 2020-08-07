@@ -43,7 +43,7 @@
       <div class="p-3 bg-light">
         <h1>MaiderArt</h1>
         <p>Bienvenidos</p>
-        <a href="#modalWin" class="btn btn-warning" type="button" data-toggle="modal">SUSCRIBETE</a>
+        <a href="#modalWin" id="btnModal" class="btn btn-warning" type="button" data-toggle="modal">SUSCRIBETE</a>
         <!-- !!!!!!!!!! ATENCION SOLO PRUEBA !!!!!!!!!! -->
         <a class="btn btn-danger" href="./pruebas.html">PRUEBAS</a>
       </div>
@@ -286,6 +286,33 @@
         interval: 2000
       });
     });
+
+    // APERTURA DEL MODAL
+    $('#modalWin').on('show.bs.modal', (e) => {
+      $('#btnModal').addClass('btn-outline-success');
+      $('#btnModal').removeClass('btn-warning');
+      $('#btnModal').addClass('disabled');
+      console.log('El modal se esta mostrando');
+    });
+
+    // TERMINACION DE APERTURA DEL MODAL
+    $('#modalWin').on('shown.bs.modal', (e) => {
+      console.log('El modal se termino de mostrar');
+    });
+
+    // CIERRE DEL MODAL
+    $('#modalWin').on('hide.bs.modal', (e) => {
+      $('#btnModal').removeClass('btn-outline-success');
+      $('#btnModal').addClass('btn-warning');
+      $('#btnModal').removeClass('disabled');
+      console.log('El modal se esta ocultando');
+    });
+
+    // TERMINACION DE CIERRE DEL MODAL
+    $('#modalWin').on('hidden.bs.modal', (e) => {
+      console.log('El modal se termino de ocultar');
+    });
+
   </script>
 
 </body>

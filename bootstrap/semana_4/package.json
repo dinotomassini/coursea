@@ -1,7 +1,7 @@
 {
-  "name": "semana_3",
+  "name": "semana_4",
   "version": "1.0.0",
-  "description": "Semana 3",
+  "description": "Semana 4",
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
