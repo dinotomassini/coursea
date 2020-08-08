@@ -1,0 +1,54 @@
+// VARIABLES - $
+$amarillo: #ecd565;
+$naranja: #da6438;
+$rojo: #c12d38;
+$violeta: #56282e;
+$verde: #558367;
+
+// MIXIN
+@mixin margenes_up_down($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin color_fondo($color) {
+  background-color: $color;
+}
+
+.fondo {
+  background-image: url('/img/seamless-yarn-balls-pattern-600w-383417554.jpg');
+}
+
+.jumbotron {
+  @include color_fondo($naranja);
+  color: rgb(4, 14, 46);
+}
+
+main {
+  @include color_fondo($verde);
+}
+
+.tarjeta {
+  @include color_fondo($amarillo);
+  padding: 5px;
+  border: 2px solid #836e06;
+  border-radius: 3%;
+}
+
+footer {
+  @include color_fondo($violeta);
+}
+
+.precio {
+  // UTILIZA EL MIXIN
+  @include margenes_up_down(0px, 0px);
+  align-self: center;
+}
+
+.tab-pane {
+  margin-top: 10px;
+}
+
+.list-group-item:hover {
+  @include color_fondo($amarillo);
+}

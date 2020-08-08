@@ -1,4 +1,8 @@
 # SEMANA 4
   
-<!-- !!!!!!!!!! ATENCION SOLO PRUEBA !!!!!!!!!! -->
-        <a class="btn btn-danger" href="./pruebas.html">PRUEBAS</a>
+## JQUERY
+  * sintaxis - `$(#selectorCSS).METODO_O_EVENTO(OPCIONES);`
+
+## SASS
+  * se instala `npm install node-sass --save-dev`
+  * se crea el script para convertir los archivos .scss a  .css; ``

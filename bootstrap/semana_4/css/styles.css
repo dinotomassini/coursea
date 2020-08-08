@@ -1,46 +1,29 @@
-.fondo{
-  background-image: url('/img/seamless-yarn-balls-pattern-600w-383417554.jpg');
-}
+.fondo {
+  background-image: url("/img/seamless-yarn-balls-pattern-600w-383417554.jpg"); }
 
 .jumbotron {
   background-color: #da6438;
-  color: rgb(4, 14, 46);
-}
+  color: #040e2e; }
 
 main {
-  background-color: #558367;
-}
+  background-color: #558367; }
 
 .tarjeta {
   background-color: #ecd565;
   padding: 5px;
   border: 2px solid #836e06;
-  border-radius: 3%;
-}
+  border-radius: 3%; }
 
 footer {
-  background-color: #56282e;
-}
+  background-color: #56282e; }
 
 .precio {
-  margin-top: 0;
-  margin-bottom: 0;
-  align-self: center;
-}
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: center; }
 
 .tab-pane {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .list-group-item:hover {
-  background-color: #ecd565;
-}
-/** PALETA **/
-/************/
-/*
- #ecd565 - amarillo - tarjetas
- #da6438 - naranja - jumbotron
- #c12d38 - rojo
- #56282e - violeta
- #558367 - verde - main
-*/
+  background-color: #ecd565; }
