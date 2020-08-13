@@ -1,0 +1,30 @@
+.fondo {
+  background-image: url("/img/seamless-yarn-balls-pattern-600w-383417554.jpg");
+}
+.jumbotron {
+  background-color: #da6438;
+  color: #040e2e;
+}
+main {
+  background-color: #558367;
+}
+.tarjeta {
+  background-color: #ecd565;
+  padding: 5px;
+  border: 2px solid #836e06;
+  border-radius: 3%;
+}
+footer {
+  background-color: #56282e;
+}
+.precio {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: center;
+}
+.tab-pane {
+  margin-top: 10px;
+}
+.list-group-item:hover {
+  background-color: #ecd565;
+}
