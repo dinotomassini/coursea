@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- build:css dist/acerca.css -->
   <!-- ESTILOS CSS -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- ESTILOS BOOTSTRAP -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- OPEN ICONIC -->
   <link rel="stylesheet" href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <!-- endbuild -->
   <title>Semana 3</title>
 </head>
 <body>
@@ -166,11 +169,12 @@
   </div>
 </footer>
 
+  <!-- build:js dist/acerca.js -->
   <!-- Scripts -->
   <!-- <script src="./js/index.js"></script> -->
   <!-- SCRIPTS JQUERY Y POPPER.JS BOOTSTRAP -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
     $('#collapse_button_close').on('click', (e) => {
@@ -180,5 +184,6 @@
         $('#materiales_collapse').collapse('hide');
     });
   </script>
+  <!-- endbuild -->
 </body>
 </html>

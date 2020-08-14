@@ -6,11 +6,12 @@
   "scripts": {
     "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "dev": "lite-server",
-    "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "scss": "node-sass -o css/ css/",
     "clean": "rimraf dist",
     "imagemin": "imagemin img/* --out-dir=dist/img",
-    "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html && usemin acerca.html -d dist --htmlmin -o dist/acerca.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin productos.html -d dist --htmlmin -o dist/productos.html"
+    "usemin": "node_modules/usemin-cli/bin/usemin index.html -d dist --htmlmin -o dist/index.html && node_modules/usemin-cli/bin/usemin acerca.html -d dist --htmlmin -o dist/acerca.html && node_modules/usemin-cli/bin/usemin contacto.html -d dist --htmlmin -o dist/contacto.html && node_modules/usemin-cli/bin/usemin productos.html -d dist --htmlmin -o dist/productos.html",
+    "build":"npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "git": {},
   "author": "Dino Tomassini",
@@ -26,7 +27,8 @@
     "onchange": "^7.0.2",
     "rimraf": "^3.0.2",
     "uglifyjs": "^2.4.11",
-    "usemin": "^0.6.0"
+    "usemin": "^0.6.0",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",

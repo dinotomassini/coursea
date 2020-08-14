@@ -33,16 +33,23 @@
 
 ## NPM
   * la version productiva se suele poner en un directorio llamado "dist"
-  * instalar (dev) onchange - monitorea cambios en archivos especificos y dispara algun script asociado, se crea un script ("watch:scss":"onchange 'css/*.scss' -- npm run scss")
-  * instalar concurrently - ejecutar varios scripts de forma automatica y en paralelo sin frenar el servidor, script: "start":"concurrently \"npm run watch:scss\" \"npm run dev\""
-  * instalar (dev) copyfiles - copia de archivos, script: 
-  * instalar (-g --unsave-perm=true --allow-root) imagemin-cli - comprimir imagenes, script: "imagemin": "imagemin img/* --out-dir=dist/img"; puede que de error por una dependencia jpegtran-bin, para solucionarlo: 
-    1. si no existe jpegtran-bin dentro de node_modules hacer sudo npm  install -g jpegtran-bin --unsafe-perm=true --allow-root
-    2. copiar /vendor dentro de jpegtran-bin a /usr/lib/node_modules/imagemin-cli/node_modules/jpegtran-bin, sudo cp -r origen destino
+  * instalar (dev) onchange - monitorea cambios en archivos especificos y dispara algun script asociado, se crea un script `"watch:scss":"onchange 'css/*.scss' -- npm run scss"`
+  * instalar concurrently - ejecutar varios scripts de forma automatica y en paralelo sin frenar el servidor, script `"start":"concurrently \"npm run watch:scss\" \"npm run dev\""`
+  * instalar (`-g --unsave-perm=true --allow-root`) imagemin-cli - comprimir imagenes, script `"imagemin": "imagemin img/* --out-dir=dist/img"`; puede que de error por una dependencia jpegtran-bin, para solucionarlo: 
+    1. si no existe jpegtran-bin dentro de node_modules hacer `sudo npm  install -g jpegtran-bin --unsafe-perm=true --allow-root`
+    2. copiar `/vendor` dentro de jpegtran-bin a `/usr/lib/node_modules/imagemin-cli/node_modules/jpegtran-bin`, `sudo cp -r origen destino`
     3. ejecutar imagemin de nuevo que deberia de funcionar
-  * instalar (dev) rimraf - limpia el directorio dist (borrado profundo), script: "clean":"rimraf dist"
-  * instalar (dev) usemin o usemin-cli - minifican y ofuscan el codigo, script: "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html" ; esto se debe hacer por cada pagina
+  * instalar (dev) rimraf - limpia el directorio dist (borrado profundo), script `"clean":"rimraf dist"`
+  * instalar (dev) usemin o usemin-cli - minifican y ofuscan el codigo, script `"usemin"
+  :"usemin index.html -d dist --htmlmin -o dist/index.html"` ; esto se debe hacer por cada pagina que se tenga, tambien en cada pagina se debe agregar reglas como comentarios a las diferentes secciones de ellas: 
+    ```
+    <!-- build:css dist/index.css -->
+    <!-- endbuild -->
+    <!-- build:js dist/index.js -->
+    <!-- endbuild -->
+    ```
   * instalar (dev) cssmin - minifican y ofuscan el codigo
   * instalar (dev) htmlmin - minifican y ofuscan el codigo
   * instalar (dev) uglifyjs - minifican y ofuscan el codigo
-  
+  * luego de todos estos scripts, creamos uno llamado `build` el cual contendra algunos de los anteriores `npm run clean && npm run scss && npm run imagemin && npm run usemin`
+  * instalar (dev) copyfiles - copia de archivos, script 
