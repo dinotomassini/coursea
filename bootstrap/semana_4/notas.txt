@@ -89,6 +89,3 @@
     * `npm install gulp-htmlmin --save-dev`
     * `npm install del --save-dev`
     
-    * `npm install gulp- --save-dev`
-    * `npm install gulp- --save-dev`
-    * `npm install gulp- --save-dev`
