@@ -72,10 +72,23 @@
     * `npm install grunt-contrib-uglify --save-dev` - ofuscar codigo
     * `npm install grunt-filerev --save-dev` - versionar los archivos, les agrega un hash a los archivos
     * `npm install grunt-usemin --save-dev` - minificar
-    * `npm install  --save-dev`
-
-
-
 
 ## GULP
-  * 
+  * similar a grunt
+  * `npm install -g gulp-cli`
+  * `npm install gulp --save-dev`
+  * se debe crear un archivo `gulpfile.js`
+  * plugins:
+    * `npm install gulp-sass --save-dev`
+    * `npm install gulp-imagemin --save-dev`
+    * `npm install gulp-uglify --save-dev`
+    * `npm install gulp-usemin --save-dev`
+    * `npm install gulp-rev --save-dev`
+    * `npm install gulp-clean-css --save-dev`
+    * `npm install gulp-flatmap --save-dev`
+    * `npm install gulp-htmlmin --save-dev`
+    * `npm install del --save-dev`
+    
+    * `npm install gulp- --save-dev`
+    * `npm install gulp- --save-dev`
+    * `npm install gulp- --save-dev`
