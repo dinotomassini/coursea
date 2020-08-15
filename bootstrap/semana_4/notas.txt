@@ -53,3 +53,29 @@
   * instalar (dev) uglifyjs - minifican y ofuscan el codigo
   * luego de todos estos scripts, creamos uno llamado `build` el cual contendra algunos de los anteriores `npm run clean && npm run scss && npm run imagemin && npm run usemin`
   * instalar (dev) copyfiles - copia de archivos, script 
+
+## GRUNT
+  * se debe de instalar `npm install grunt --save-dev`, puede que tambien sea necesario instalar `sudo npm install -g grunt-cli`
+  * se puede dar el caso que se necesite instalar: `ruby` y `npm install -g sass`
+  * se crea un archivo con la configuracion y herramientas para utilizar, se llama `Gruntfile.js`
+  * plugins
+    * `npm install grunt-contrib-sass --save-dev`
+    * `npm install grunt-contrib-watch --save-dev` - revisa por cambios en archivos
+    * `npm install grunt-browser-sync --save-dev` - deja el servidor corriendo y actualiza los cambios
+    * `npm install grunt-contrib-imagemin --save-dev` - compresor de imagenes
+    * `npm install time-grunt --save-dev` - estadisticas de ejecucion de las tareas
+    * `npm install jit-grunt --save-dev` - precarga modulos para agilizar las tareas
+    * `npm install grunt-contrib-copy --save-dev` - copia archivos
+    * `npm install grunt-contrib-clean --save-dev` - limpia las carpetas
+    * `npm install grunt-contrib-concat --save-dev` - concatenar archivos
+    * `npm install grunt-contrib-cssmin --save-dev` - minificar css
+    * `npm install grunt-contrib-uglify --save-dev` - ofuscar codigo
+    * `npm install grunt-filerev --save-dev` - versionar los archivos, les agrega un hash a los archivos
+    * `npm install grunt-usemin --save-dev` - minificar
+    * `npm install  --save-dev`
+
+
+
+
+## GULP
+  * 
