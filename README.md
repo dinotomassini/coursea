@@ -1,4 +1,4 @@
-Curso de Bootstrap impartido por Coursea
+Curso de Bootstrap impartido por Coursera
 
 4 modulos
 
